@@ -10,7 +10,7 @@ public class InfoController {
 
     @GetMapping
     public @ResponseBody String sayHello(@RequestParam(required = false) String name) {
-        return Objects.isNull(name) ? "Hello : Stranger !": "Hello : " + name;
+        return Objects.isNull(name) ? "Bonjour : Stranger !": "Bonjour : " + name;
     }
 
 }
